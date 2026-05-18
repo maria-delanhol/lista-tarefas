@@ -7,6 +7,10 @@ function adicionarTarefa() {
 
   item.textContent = input.value;
 
+  item.onclick = function() {
+    item.remove();
+  }
+
   lista.appendChild(item);
 
   input.value = "";
