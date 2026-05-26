@@ -7,7 +7,7 @@ function adicionarTarefa() {
 
   item.textContent = input.value;
 
-  item.onclick = function() {
+  item.onclick = function() { if (confirm("Deseja excluir?")) {
     item.remove();
   }
 
